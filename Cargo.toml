@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/Mythcoin_backend"
+]
+resolver = "2"

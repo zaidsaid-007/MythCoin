@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "Mythcoin_backend": {
+      "candid": "src/Mythcoin_backend/Mythcoin_backend.did",
+      "package": "Mythcoin_backend",
+      "type": "rust"
+    },
+    "Mythcoin_frontend": {
+      "dependencies": [
+        "Mythcoin_backend"
+      ],
+      "source": [
+        "src/Mythcoin_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Mythcoin_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
